@@ -1,4 +1,4 @@
-name: FamilyKids
+name: FlasherKidz
 options:
   bundleIdPrefix: com.billdonner
   deploymentTarget:
@@ -12,7 +12,7 @@ settings:
     DEVELOPMENT_TEAM: NEAY582ME4
 
 targets:
-  FamilyKids:
+  FlasherKidz:
     type: application
     platform: iOS
     sources:
@@ -22,8 +22,10 @@ targets:
     settings:
       base:
         INFOPLIST_FILE: Sources/Info.plist
-        PRODUCT_BUNDLE_IDENTIFIER: com.billdonner.family-kids
-        MARKETING_VERSION: "1.0"
-        CURRENT_PROJECT_VERSION: "1"
+        PRODUCT_BUNDLE_IDENTIFIER: com.billdonner.obo
+        PRODUCT_NAME: FlasherKidz
+        INFOPLIST_KEY_CFBundleDisplayName: Flasherz Kidz
+        MARKETING_VERSION: "2.0"
+        CURRENT_PROJECT_VERSION: "2"
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         GENERATE_INFOPLIST_FILE: NO

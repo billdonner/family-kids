@@ -5,8 +5,9 @@ struct KidsOnboardingView: View {
     @State private var currentPage = 0
 
     private let pages: [(icon: String, title: String, subtitle: String, color: Color)] = [
-        ("figure.child", "Family Kids", "Learn about your family with fun flashcards!", .orange),
-        ("rectangle.on.rectangle.angled.fill", "Flip & Learn", "Tap cards to flip them and discover answers about your family.", .blue),
+        ("figure.child", "Flasherz Kidz", "Learn about your family and test your knowledge!", .orange),
+        ("rectangle.on.rectangle.angled.fill", "Flip & Learn", "Tap flashcards to reveal answers about your family.", .blue),
+        ("questionmark.circle.fill", "Play Trivia", "Test your general knowledge with fun quiz questions!", .purple),
     ]
 
     var body: some View {

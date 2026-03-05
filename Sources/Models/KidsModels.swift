@@ -63,3 +63,37 @@ struct GenerateDeckResponse: Codable, Sendable {
     let cards_created: Int
     let player_name: String
 }
+
+// MARK: - Trivia (from cardzerver /api/v1/trivia)
+
+struct TriviaChallenge: Identifiable, Codable, Sendable {
+    let id: String
+    let topic: String
+    let question: String
+    let answers: [String]
+    let correct: String
+    let explanation: String
+
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        id = (try? c.decode(String.self, forKey: .id)) ?? UUID().uuidString
+        topic = try c.decode(String.self, forKey: .topic)
+        question = try c.decode(String.self, forKey: .question)
+        answers = try c.decode([String].self, forKey: .answers)
+        correct = try c.decode(String.self, forKey: .correct)
+        explanation = (try? c.decode(String.self, forKey: .explanation)) ?? ""
+    }
+}
+
+struct TriviaResponse: Codable, Sendable {
+    let challenges: [TriviaChallenge]
+}
+
+struct TriviaCategory: Identifiable, Codable, Sendable {
+    let id: String
+    let label: String
+}
+
+struct CategoriesResponse: Codable, Sendable {
+    let categories: [TriviaCategory]
+}

@@ -55,4 +55,23 @@ actor KidsAPIClient {
         let (data, _) = try await session.data(for: request)
         return try decoder.decode(GenerateDeckResponse.self, from: data)
     }
+
+    /// Fetch trivia challenges (general knowledge)
+    func getTrivia(limit: Int = 10, category: String? = nil) async throws -> [TriviaChallenge] {
+        var components = URLComponents(url: baseURL.appendingPathComponent("/api/v1/trivia"), resolvingAgainstBaseURL: false)!
+        var queryItems = [URLQueryItem(name: "limit", value: "\(limit)")]
+        if let cat = category { queryItems.append(URLQueryItem(name: "topic", value: cat)) }
+        components.queryItems = queryItems
+        let (data, _) = try await session.data(from: components.url!)
+        let response = try decoder.decode(TriviaResponse.self, from: data)
+        return response.challenges
+    }
+
+    /// Fetch available trivia categories
+    func getTriviaCategories() async throws -> [TriviaCategory] {
+        let url = baseURL.appendingPathComponent("/api/v1/trivia/categories")
+        let (data, _) = try await session.data(from: url)
+        let response = try decoder.decode(CategoriesResponse.self, from: data)
+        return response.categories
+    }
 }
