@@ -3,18 +3,23 @@ import Foundation
 /// Per-child score persistence. Keyed by player UUID string.
 @MainActor
 final class ScoreStore: ObservableObject {
-    private let playerId: String
+    let playerId: UUID
+    private let prefix: String
 
     init(playerId: UUID) {
-        self.playerId = playerId.uuidString
+        self.playerId = playerId
+        self.prefix = "score_\(playerId.uuidString)_"
     }
 
-    private func key(_ suffix: String) -> String { "score_\(playerId)_\(suffix)" }
+    private func key(_ suffix: String) -> String { prefix + suffix }
 
-    var flashcardSessions: Int { UserDefaults.standard.integer(forKey: key("fc_sessions")) }
-    var triviaHighScore: Int   { UserDefaults.standard.integer(forKey: key("trivia_best")) }
-    var streakHighScore: Int   { UserDefaults.standard.integer(forKey: key("streak_best")) }
-    var speedHighScore: Int    { UserDefaults.standard.integer(forKey: key("speed_best")) }
+    // MARK: - Scores
+
+    var flashcardSessions: Int  { UserDefaults.standard.integer(forKey: key("fc_sessions")) }
+    var triviaHighScore: Int    { UserDefaults.standard.integer(forKey: key("trivia_best")) }
+    var streakHighScore: Int    { UserDefaults.standard.integer(forKey: key("streak_best")) }
+    var speedHighScore: Int     { UserDefaults.standard.integer(forKey: key("speed_best")) }
+    var dailiesCompleted: Int   { UserDefaults.standard.integer(forKey: key("dailies_done")) }
 
     func recordFlashcardSession() {
         UserDefaults.standard.set(flashcardSessions + 1, forKey: key("fc_sessions"))
@@ -30,5 +35,9 @@ final class ScoreStore: ObservableObject {
 
     func updateSpeedHighScore(_ score: Int) {
         if score > speedHighScore { UserDefaults.standard.set(score, forKey: key("speed_best")) }
+    }
+
+    func recordDailyCompleted() {
+        UserDefaults.standard.set(dailiesCompleted + 1, forKey: key("dailies_done"))
     }
 }

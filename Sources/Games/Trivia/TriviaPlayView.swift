@@ -138,6 +138,9 @@ struct TriviaPlayView: View {
         selected = nil
         showResult = false
         if currentIndex + 1 >= challenges.count {
+            if let pid = ctx.currentPlayer?.id {
+                ScoreStore(playerId: pid).updateTriviaHighScore(score)
+            }
             isFinished = true
         } else {
             currentIndex += 1

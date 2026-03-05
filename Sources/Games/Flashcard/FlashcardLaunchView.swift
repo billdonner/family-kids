@@ -49,6 +49,11 @@ struct FlashcardLaunchView: View {
                 }
                 .navigationDestination(for: KidsDeck.self) { deck in
                     CardPlayView(deck: deck)
+                        .onAppear {
+                            if let pid = ctx.currentPlayer?.id {
+                                ScoreStore(playerId: pid).recordFlashcardSession()
+                            }
+                        }
                 }
             }
         }

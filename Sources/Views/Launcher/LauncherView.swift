@@ -3,6 +3,7 @@ import SwiftUI
 struct LauncherView: View {
     @EnvironmentObject var ctx: AppContext
     @State private var showChildSwitcher = false
+    @State private var showHighScores = false
     @State private var activeGame: GameType?
 
     private var player: KidsPlayer { ctx.currentPlayer! }
@@ -29,14 +30,20 @@ struct LauncherView: View {
                                 .foregroundStyle(.white.opacity(0.6))
                         }
                         Spacer()
-                        Button { showChildSwitcher = true } label: {
-                            ZStack {
-                                Circle()
-                                    .fill(.white.opacity(0.15))
-                                    .frame(width: 44, height: 44)
-                                Text(String(player.displayName.prefix(1)).uppercased())
-                                    .font(.headline)
-                                    .foregroundStyle(.white)
+                        HStack(spacing: 10) {
+                            Button { showHighScores = true } label: {
+                                ZStack {
+                                    Circle().fill(.white.opacity(0.15)).frame(width: 44, height: 44)
+                                    Image(systemName: "trophy.fill")
+                                        .font(.system(size: 18)).foregroundStyle(.yellow)
+                                }
+                            }
+                            Button { showChildSwitcher = true } label: {
+                                ZStack {
+                                    Circle().fill(.white.opacity(0.15)).frame(width: 44, height: 44)
+                                    Text(String(player.displayName.prefix(1)).uppercased())
+                                        .font(.headline).foregroundStyle(.white)
+                                }
                             }
                         }
                     }
@@ -79,8 +86,10 @@ struct LauncherView: View {
                     .environmentObject(ctx)
             }
             .sheet(isPresented: $showChildSwitcher) {
-                ChildSwitcherView()
-                    .environmentObject(ctx)
+                ChildSwitcherView().environmentObject(ctx)
+            }
+            .sheet(isPresented: $showHighScores) {
+                HighScoresView().environmentObject(ctx)
             }
         }
     }

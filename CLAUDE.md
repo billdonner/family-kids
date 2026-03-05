@@ -91,6 +91,7 @@ xcodebuild -exportArchive \
 | `Sources/Games/Streak/StreakView.swift` | Consecutive correct answers |
 | `Sources/Games/DailyChallenge/DailyChallengeView.swift` | 5 Qs once per day, saves result |
 | `Sources/Games/CategoryTrivia/CategoryTriviaView.swift` | Topic picker + Q&A |
+| `Sources/Views/HighScoresView.swift` | Per-child trophy screen (streak, speed, trivia, daily, flashcard sessions) |
 
 ## API Endpoints Used
 

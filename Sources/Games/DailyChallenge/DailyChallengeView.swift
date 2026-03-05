@@ -140,6 +140,9 @@ struct DailyChallengeView: View {
         if currentIndex + 1 >= Self.questionsPerDay || currentIndex + 1 >= challenges.count {
             // Save result
             UserDefaults.standard.set("\(score)/\(Self.questionsPerDay)", forKey: todayKey)
+            if let pid = ctx.currentPlayer?.id {
+                ScoreStore(playerId: pid).recordDailyCompleted()
+            }
             isFinished = true
         } else {
             currentIndex += 1
