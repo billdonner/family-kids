@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		06E3B236AC00760768960AE0 /* FlashcardLaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6091CB1FC4F592C7BF645F /* FlashcardLaunchView.swift */; };
 		28F8F9163ADFEE93C274D592 /* PlayerSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1D7527953F47164309776D /* PlayerSetupView.swift */; };
+		4496403861FE1865B1552556 /* MemoryMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D3416767483FF8A4E5C186 /* MemoryMatchView.swift */; };
 		46417B771054A1B963351DE7 /* FamilySetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080B44F8B339CE941301A86 /* FamilySetupView.swift */; };
 		51096B590D7DA893F41157F7 /* CardPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B71E6AA48E54DE2D03AC4D4 /* CardPlayView.swift */; };
 		56CA4F921B7956E6630AF2D3 /* KidsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDD5A79755F73EB444ADFEC /* KidsModels.swift */; };
@@ -17,14 +18,19 @@
 		8DBFA97594F47072529F1EC2 /* KidsAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC1733F2C178BB847B31F9E /* KidsAPIClient.swift */; };
 		9B0D942D356DE32FDC5BBA33 /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6221BDC2F5BC1E7CFCF992AC /* AppContext.swift */; };
 		9BA247E0C63B6034DAF39227 /* ChildSwitcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49373C9339168E1CC3C7F5A5 /* ChildSwitcherView.swift */; };
+		9BF365481452EA5F29FAA465 /* PictureQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C861EFF4FE95E3CD1DA8BF /* PictureQuizView.swift */; };
 		9EBB6DE88B37BEE108F35470 /* PlayerSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390EA427BA811B2B9354E70E /* PlayerSelectView.swift */; };
 		9EDB779262F9BE29EB6DB5FB /* KidsOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09D80D897FB259FC51573AC /* KidsOnboardingView.swift */; };
+		B664244649B897A7B8F1342D /* WordScrambleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E20191D19B783D5F9ACD22 /* WordScrambleView.swift */; };
 		C0CBD8FE5A237F9E15AF8A5D /* ScoreStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AA8FFD63A3F3617189086B /* ScoreStore.swift */; };
 		C9658AED6938DC60F9158DEF /* GameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F337BB0C5C1281305C4D9C5B /* GameType.swift */; };
+		C9B5DB8C3D55224EA9744287 /* StoryTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB87140A10E4131AE59EF3A /* StoryTimeView.swift */; };
 		D13B8AEFB5C8A38638D53E0B /* GameTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145A6EAC82CEC683A50A1B26 /* GameTileView.swift */; };
 		D4EF69AB3F8F5BF2203B1D40 /* LauncherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689551DB075AEB612B6FD465 /* LauncherView.swift */; };
 		E1854EFD730964A614399F5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344C7A1BE19CAA93E6A4CD35 /* Assets.xcassets */; };
 		E609D614A1327BC01DD9E365 /* FamilyKidsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4F55CAC2245A5972CC9ABF /* FamilyKidsApp.swift */; };
+		F017F535E88D7E293B2A6C9A /* SpellItView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7258E166B967E82C7673F942 /* SpellItView.swift */; };
+		F4A765C2F50667D36DF07D1B /* TrueOrFalseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828CF56EE86B4C8A639F0BBC /* TrueOrFalseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,14 +39,20 @@
 		27AA8FFD63A3F3617189086B /* ScoreStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreStore.swift; sourceTree = "<group>"; };
 		344C7A1BE19CAA93E6A4CD35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		390EA427BA811B2B9354E70E /* PlayerSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSelectView.swift; sourceTree = "<group>"; };
+		39C861EFF4FE95E3CD1DA8BF /* PictureQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureQuizView.swift; sourceTree = "<group>"; };
 		49373C9339168E1CC3C7F5A5 /* ChildSwitcherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildSwitcherView.swift; sourceTree = "<group>"; };
 		4B71E6AA48E54DE2D03AC4D4 /* CardPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPlayView.swift; sourceTree = "<group>"; };
 		4DE16A1E9F741F7DACC3CAA4 /* TriviaPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaPlayView.swift; sourceTree = "<group>"; };
 		5234715BB31605C7A0B1CB15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		56E20191D19B783D5F9ACD22 /* WordScrambleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordScrambleView.swift; sourceTree = "<group>"; };
 		6221BDC2F5BC1E7CFCF992AC /* AppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContext.swift; sourceTree = "<group>"; };
 		689551DB075AEB612B6FD465 /* LauncherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherView.swift; sourceTree = "<group>"; };
 		7080B44F8B339CE941301A86 /* FamilySetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilySetupView.swift; sourceTree = "<group>"; };
+		7258E166B967E82C7673F942 /* SpellItView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellItView.swift; sourceTree = "<group>"; };
 		7B4F55CAC2245A5972CC9ABF /* FamilyKidsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyKidsApp.swift; sourceTree = "<group>"; };
+		7DB87140A10E4131AE59EF3A /* StoryTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTimeView.swift; sourceTree = "<group>"; };
+		828CF56EE86B4C8A639F0BBC /* TrueOrFalseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueOrFalseView.swift; sourceTree = "<group>"; };
+		84D3416767483FF8A4E5C186 /* MemoryMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryMatchView.swift; sourceTree = "<group>"; };
 		9D6091CB1FC4F592C7BF645F /* FlashcardLaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardLaunchView.swift; sourceTree = "<group>"; };
 		9FDD5A79755F73EB444ADFEC /* KidsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsModels.swift; sourceTree = "<group>"; };
 		BE1D7527953F47164309776D /* PlayerSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSetupView.swift; sourceTree = "<group>"; };
@@ -55,9 +67,23 @@
 			isa = PBXGroup;
 			children = (
 				AC252D7190571DD296F97C1B /* Flashcard */,
+				506D0BCD882FEC77EAF997C5 /* MemoryMatch */,
+				2C10ACE570FD651ADF1D8952 /* PictureQuiz */,
+				55B7DEAFB34840936A687C00 /* SpellIt */,
+				CBC8AFA07276D348B3EEE2FE /* StoryTime */,
 				D24236E66C56CB3105D7C9E9 /* Trivia */,
+				C2689CB62E44C832D61BF412 /* TrueOrFalse */,
+				FFA98682F60739F08D95C6D3 /* WordScramble */,
 			);
 			path = Games;
+			sourceTree = "<group>";
+		};
+		2C10ACE570FD651ADF1D8952 /* PictureQuiz */ = {
+			isa = PBXGroup;
+			children = (
+				39C861EFF4FE95E3CD1DA8BF /* PictureQuizView.swift */,
+			);
+			path = PictureQuiz;
 			sourceTree = "<group>";
 		};
 		35B10E4D9F04FD8C7B9BD8AA /* Products */ = {
@@ -66,6 +92,22 @@
 				0AD2DE4D11819C4D052402C2 /* FlasherKidz.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		506D0BCD882FEC77EAF997C5 /* MemoryMatch */ = {
+			isa = PBXGroup;
+			children = (
+				84D3416767483FF8A4E5C186 /* MemoryMatchView.swift */,
+			);
+			path = MemoryMatch;
+			sourceTree = "<group>";
+		};
+		55B7DEAFB34840936A687C00 /* SpellIt */ = {
+			isa = PBXGroup;
+			children = (
+				7258E166B967E82C7673F942 /* SpellItView.swift */,
+			);
+			path = SpellIt;
 			sourceTree = "<group>";
 		};
 		5C5285FFCED458D22E9EFFCA /* App */ = {
@@ -129,6 +171,22 @@
 			path = Flashcard;
 			sourceTree = "<group>";
 		};
+		C2689CB62E44C832D61BF412 /* TrueOrFalse */ = {
+			isa = PBXGroup;
+			children = (
+				828CF56EE86B4C8A639F0BBC /* TrueOrFalseView.swift */,
+			);
+			path = TrueOrFalse;
+			sourceTree = "<group>";
+		};
+		CBC8AFA07276D348B3EEE2FE /* StoryTime */ = {
+			isa = PBXGroup;
+			children = (
+				7DB87140A10E4131AE59EF3A /* StoryTimeView.swift */,
+			);
+			path = StoryTime;
+			sourceTree = "<group>";
+		};
 		D24236E66C56CB3105D7C9E9 /* Trivia */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +221,14 @@
 				689551DB075AEB612B6FD465 /* LauncherView.swift */,
 			);
 			path = Launcher;
+			sourceTree = "<group>";
+		};
+		FFA98682F60739F08D95C6D3 /* WordScramble */ = {
+			isa = PBXGroup;
+			children = (
+				56E20191D19B783D5F9ACD22 /* WordScrambleView.swift */,
+			);
+			path = WordScramble;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,10 +314,16 @@
 				56CA4F921B7956E6630AF2D3 /* KidsModels.swift in Sources */,
 				9EDB779262F9BE29EB6DB5FB /* KidsOnboardingView.swift in Sources */,
 				D4EF69AB3F8F5BF2203B1D40 /* LauncherView.swift in Sources */,
+				4496403861FE1865B1552556 /* MemoryMatchView.swift in Sources */,
+				9BF365481452EA5F29FAA465 /* PictureQuizView.swift in Sources */,
 				9EBB6DE88B37BEE108F35470 /* PlayerSelectView.swift in Sources */,
 				28F8F9163ADFEE93C274D592 /* PlayerSetupView.swift in Sources */,
 				C0CBD8FE5A237F9E15AF8A5D /* ScoreStore.swift in Sources */,
+				F017F535E88D7E293B2A6C9A /* SpellItView.swift in Sources */,
+				C9B5DB8C3D55224EA9744287 /* StoryTimeView.swift in Sources */,
 				849FE52CDEEC5CAB9DAFF6A6 /* TriviaPlayView.swift in Sources */,
+				F4A765C2F50667D36DF07D1B /* TrueOrFalseView.swift in Sources */,
+				B664244649B897A7B8F1342D /* WordScrambleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,7 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = Sources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Flasherz Kidz";
@@ -407,7 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = Sources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Flasherz Kidz";

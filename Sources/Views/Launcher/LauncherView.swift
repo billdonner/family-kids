@@ -97,11 +97,21 @@ struct GameRouter: View {
             Group {
                 switch game {
                 case .flashcard:
-                    FlashcardLaunchView()
-                        .environmentObject(ctx)
+                    FlashcardLaunchView().environmentObject(ctx)
+                case .storyTime:
+                    StoryTimeView().environmentObject(ctx)
+                case .memoryMatch:
+                    MemoryMatchView().environmentObject(ctx)
+                case .trueOrFalse:
+                    TrueOrFalseView().environmentObject(ctx)
+                case .pictureQuiz:
+                    PictureQuizView().environmentObject(ctx)
+                case .spellIt:
+                    SpellItView().environmentObject(ctx)
                 case .trivia:
-                    TriviaPlayView()
-                        .environmentObject(ctx)
+                    TriviaPlayView().environmentObject(ctx)
+                case .wordScramble:
+                    WordScrambleView().environmentObject(ctx)
                 }
             }
             .toolbar {
