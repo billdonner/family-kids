@@ -26,6 +26,6 @@ targets:
         PRODUCT_NAME: FlasherKidz
         INFOPLIST_KEY_CFBundleDisplayName: Flasherz Kidz
         MARKETING_VERSION: "2.0"
-        CURRENT_PROJECT_VERSION: "3"
+        CURRENT_PROJECT_VERSION: "4"
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         GENERATE_INFOPLIST_FILE: NO

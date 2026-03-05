@@ -96,22 +96,19 @@ struct GameRouter: View {
         NavigationStack {
             Group {
                 switch game {
-                case .flashcard:
-                    FlashcardLaunchView().environmentObject(ctx)
-                case .storyTime:
-                    StoryTimeView().environmentObject(ctx)
-                case .memoryMatch:
-                    MemoryMatchView().environmentObject(ctx)
-                case .trueOrFalse:
-                    TrueOrFalseView().environmentObject(ctx)
-                case .pictureQuiz:
-                    PictureQuizView().environmentObject(ctx)
-                case .spellIt:
-                    SpellItView().environmentObject(ctx)
-                case .trivia:
-                    TriviaPlayView().environmentObject(ctx)
-                case .wordScramble:
-                    WordScrambleView().environmentObject(ctx)
+                case .flashcard:      FlashcardLaunchView().environmentObject(ctx)
+                case .storyTime:      StoryTimeView().environmentObject(ctx)
+                case .memoryMatch:    MemoryMatchView().environmentObject(ctx)
+                case .trueOrFalse:    TrueOrFalseView().environmentObject(ctx)
+                case .flashcardQuiz:  FlashcardQuizView().environmentObject(ctx)
+                case .pictureQuiz:    PictureQuizView().environmentObject(ctx)
+                case .dailyChallenge: DailyChallengeView().environmentObject(ctx)
+                case .categoryTrivia: CategoryTriviaView().environmentObject(ctx)
+                case .spellIt:        SpellItView().environmentObject(ctx)
+                case .trivia:         TriviaPlayView().environmentObject(ctx)
+                case .speedRound:     SpeedRoundView().environmentObject(ctx)
+                case .wordScramble:   WordScrambleView().environmentObject(ctx)
+                case .streak:         StreakView().environmentObject(ctx)
                 }
             }
             .toolbar {
